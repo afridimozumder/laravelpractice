@@ -11,4 +11,6 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/about', [AboutController::class, 'about']);
-Route::get('/contactus', [AboutController::class, 'contact'])->name('contact');
+Route::get('/contacts', [AboutController::class, 'contact'])->name('contact')->middleware('test1');
+
+Route::get('/Hehe', [AboutController::class, 'hehe']);

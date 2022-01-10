@@ -12,4 +12,7 @@ class AboutController extends Controller
     public function contact(){
         return view('contact');
     }
+    public function hehe(){
+        return ('Hehe A is not equal to 5!!');
+    }
 }
